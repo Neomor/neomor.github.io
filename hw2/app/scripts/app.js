@@ -5,12 +5,14 @@
       .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {
-              templateUrl: 'views/home.html',
-              controller: 'HomeController as ctrl'
+                templateUrl: 'views/home.html',
+                controller: 'HomeController',
+                controllerAs: 'ctrl'
             })
             .when('/search', {
-              templateUrl: 'views/search.html',
-              controller: 'SearchController as ctrl'
+                templateUrl: 'views/search.html',
+                controller: 'SearchController',
+                controllerAs: 'ctrl'
             })
             .otherwise({
               redirectTo: '/'
